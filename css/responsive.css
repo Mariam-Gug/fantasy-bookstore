@@ -1,0 +1,26 @@
+/* burger bar */
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .list {
+        display: none;
+        margin-top: 20px;
+        align-items: flex-end;
+    }
+    .toggleButton {
+        display: block;
+    }
+    .list {
+        flex-direction: column;
+    }
+    .list li {
+        text-align: end;
+    }
+    .list.activeNav {
+        display: block;
+    }
+}
