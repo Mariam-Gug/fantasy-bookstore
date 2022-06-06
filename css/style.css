@@ -62,12 +62,16 @@ body {
 }
 .list {
     display: flex;
+    align-items: center;
 }
-.list a {
+.nav-a {
     color: #fff;
     margin-left: 20px;
 }
-
+#nav-shop {
+    color: rgb(146, 3, 3);
+    font-size: 1.5rem;
+}
 /* burger bar */
 .toggleButton {
     display: none;
@@ -255,22 +259,28 @@ body {
 
 /* bestsellers section */
 
+.grey-box-wrapper {
+    margin-top: 100px;
+}
 .cover-box {
     padding: 5rem 0 8rem 12rem;
-    margin-top: 50px;
     background-color: var(--black);
 }
 .inner-cover-box {
     max-width: 500px;
     width: 50%;
 }
-.inner-cover-box h4 {
-    margin-bottom: 2rem;
+.cover-box-title {
+    width: 300px;
+    padding: .8rem;
+    margin-left: 7rem;
+    background-color: var(--black);
+    color: #fff;
+    text-align: center;
     font-family: 'MedievalSharp', cursive;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2rem;
-    color: #fff;
 }
 .inner-cover-box p {
     font-family: 'Amatic SC', cursive;
