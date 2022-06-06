@@ -155,13 +155,96 @@ setInterval( () => {
 setSlider();
 
 
+// reviews section
+
+let mainWrapperPost = document.getElementById('slider-absolute');
+
+
+// sending request to server
+function ajax(url, callback) {
+    let request = new XMLHttpRequest();
+    request.open('GET', url);
+    request.addEventListener('load', function() {
+        let data = JSON.parse(request.responseText);
+        callback(data);
+    });
+
+    request.send();
+}
+
+
+ajax('https://jsonplaceholder.typicode.com/comments', function(data) {
+    printData(data);
+})
+
+
+function printData(data) {
+    data.forEach(element => {
+        createPost(element);
+    });
+}
+
+
+// creating comments
+function createPost(item) {
+    let swiperSlider = document.createElement('div');
+    swiperSlider.classList.add('swiper-slide');
+    swiperSlider.setAttribute('id', 'comment-slider');
+
+    let divWrapper = document.createElement('div');
+    divWrapper.classList.add('posts');
+
+    let ratingStars = document.createElement('div');
+    ratingStars.classList.add('rating-stars');
+    
+    let h5Tag = document.createElement('h5');
+    h5Tag.innerText = item.email;
+    h5Tag.classList.add('comment-user');
+
+    let pTag = document.createElement('p');
+    pTag.innerText = item.body;
+    pTag.classList.add('comment-body');
+
+    divWrapper.appendChild(ratingStars);
+    divWrapper.appendChild(h5Tag);
+    divWrapper.appendChild(pTag);
+    swiperSlider.appendChild(divWrapper);
+
+    mainWrapperPost.appendChild(swiperSlider);
+
+    console.log(divWrapper);
+}
+
+let swiper2 = new Swiper('.comment-swiper', {
+    slidesPerView: 4,
+    navigation: {
+      nextEl: '#next-button2',
+      prevEl: '#prev-button2',
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+  });
+
+
+// reviews section ends
+
+
 
 // bestseller swiper Selection
 let swiper = new Swiper('.books-slider', {
     slidesPerView: 4,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '#next-button',
+      prevEl: '#prev-button',
     },
     breakpoints: {
         0: {
@@ -180,6 +263,4 @@ let swiper = new Swiper('.books-slider', {
   });
 
 
-
-// reviews section
 

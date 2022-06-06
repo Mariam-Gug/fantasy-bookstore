@@ -305,7 +305,6 @@ body {
 
 /* bestseller swiper */
 .book-slider {
-    background-color: red;
     flex: 1 1 42rem;
     text-align: center;
     margin-top: 2rem auto 0;
@@ -394,4 +393,49 @@ body {
 
 .btn:hover{
     background:var(--dark-red);
+}
+
+
+/* review section */
+.posts {
+    width: 80%;
+    height: 250px;
+    margin: 0;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--border);
+}
+.comment-user {
+    font-size: 1.6rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+.comment-body {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+#comment-slider {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#comment-slider:hover {
+    transform: scale(.95);
+}
+.rating-stars {
+    height: 2rem;
+    width: 8rem;
+    margin-bottom: 1rem;
+    background-image: url(../img/rating-stars.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
