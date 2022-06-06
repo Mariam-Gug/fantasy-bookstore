@@ -334,7 +334,10 @@ body {
     width: 100%;
     z-index: -1;
 }
-#button {
+#next-button,
+#next-button2,
+#prev-button,
+#prev-button2 {
     color: grey;
 }
 
@@ -425,7 +428,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    cursor: grab;
 }
 #comment-slider:hover {
     transform: scale(.95);
