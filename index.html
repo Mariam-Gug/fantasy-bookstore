@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/f31d2e197d.js" crossorigin="anonymous"></script>
-    <title>Lecture 9-10</title>
+    <title>Moria Bookshop</title>
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
                         <div  class="burgerBarStick burgerBarStick2"></div>
                         <div class="burgerBarStick burgerBarStick3"></div>
                     </div>
-                    <ul class="list" id="list">
+                    <ul class="list">
                         <li>
                             <a class="nav-a" href="#">home</a>
                         </li>
@@ -77,28 +78,33 @@
                     <img class="book-cover" src="img/new-arr/new1.jpg" alt="book-cover">
                     <h4>Brian Staveley</h4>
                     <h5>The Empire's Ruin</h5>
-                    <a href="#" class="block-button">Read More</a>
+                    <h5 class="red-text">$ 26.81</h5>
+                    <a href="#" class="block-button">Add to Cart</a>
                 </div>
                 <div class="block">
                     <img class="book-cover" src="img/new-arr/new2.jpg" alt="book-cover">
                     <h4>Samantha Shennon</h4>
                     <h5>The Priory of The Orange Tree</h5>
-                    <a href="#" class="block-button">Read More</a>
+                    <h5 class="red-text">$ 31.26</h5>
+                    <a href="#" class="block-button">Add to Cart</a>
                 </div>
                 <div class="block">
                     <img class="book-cover" src="img/new-arr/new3.jpg" alt="book-cover">
                     <h4>Mika Shackle</h4>
                     <h5>A Fool's Hope</h5>
-                    <a href="#" class="block-button">Read More</a>
+                    <h5 class="red-text">$ 17.80</h5>
+                    <a href="#" class="block-button">Add to Cart</a>
                 </div>
                 <div class="block">
                     <img class="book-cover" src="img/new-arr/new4.jfif" alt="book-cover">
                     <h4>John Gwynne</h4>
                     <h5>The Shadow of The gods</h5>
-                    <a href="#" class="block-button">Read More</a>
+                    <h5 class="red-text">$ 15.55</h5>
+                    <a href="#" class="block-button">Add to Cart</a>
                 </div>
             </div>
         </div>
+        
 
     </section>
 
@@ -113,10 +119,50 @@
                     <p>“There is nothing like looking, if you want to find something. You certainly usually find something, if you look, but it is not always quite the something you were after.” - <span>J.R.R. Tolkien, The Hobbit</span></p>
                 </div>
             </div>
-            <div class="front-box"></div>
+            <div class="front-box">
+                <div class="slider-wraper">
+                    <div class="swiper books-slider" id="book-slider">
+                        <div class="swiper-wrapper" id="slider-absolute">
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/1.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/2.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/3.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/4.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/5.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/6.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/7.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/8.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/9.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/11.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/12.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/13.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/14.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/15.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/16.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/17.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/18.jpg" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/19.jfif" alt=""></a>
+                            <a href="#" class="swiper-slide" id="swiper-img"><img src="img/swiper/20.jfif" alt=""></a>
+                        </div>
+                        <div class="swiper-button-next" id="button"></div>
+                        <div class="swiper-button-prev" id="button"></div>
+                        <div class="shelf"><img src="https://www.pngmart.com/files/7/Shelf-PNG-Clipart.png" class="stand" alt="shelf"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+
+    <!-- subscribtion section -->
+
+    <section class="subscribtion">
+        <form action="">
+            <h3>Become fellow reader and subscribe for latest news</h3>
+            <input type="email" name="" placeholder="Enter your email" class="box">
+            <input type="submit" value="subscribe" class="btn">
+        </form>
+
+    </section>
 
 
     <!-- reviews section -->
@@ -128,7 +174,11 @@
                     <p>“Your text goes here.” - <span>J.R.R. Tolkien, The Hobbit</span></p>
                 </div>
             </div>
-            <div class="front-box"></div>
+            <div class="front-box" id="api-user-emails">
+                <ul id="list"></ul>
+            </div>
+            <button id="loadprev">Load Previous Page</button>
+            <button id="loadmore">Load Next Page</button>
         </div>
     </section>
 
@@ -139,6 +189,10 @@
     <footer>
 
     </footer>
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
 </body>
