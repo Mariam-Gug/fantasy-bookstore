@@ -1,5 +1,15 @@
-// burger bar
+// header scroll
 
+window.onscroll = () =>{
+    if(window.scrollY > 80) {
+        document.getElementById('nav-bar').classList.add('header-active');
+    } else {
+        document.getElementById('nav-bar').classList.remove('header-active');
+    }
+};
+
+
+// burger bar
 
 let navigation = document.getElementById('list');
 let toggleButton = document.getElementById('toggleBurger');
