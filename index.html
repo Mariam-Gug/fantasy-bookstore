@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Fantasy boookshop, books in fantasy genre">
+    <meta name="keywords" content="books, fantasy books, newly released books, best sellers in fantasy genre">
     <meta name="author" content="Mariam Gugutishvili">
     <!-- fb meta tags -->
     <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
@@ -69,6 +69,28 @@
             </div>
         </div>
     </header>
+
+    <!-- sign in form -->
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+    
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+    
+    </div>
     
     <!-- slider -->
     <div class="slider-wrapper">
@@ -207,7 +229,7 @@
 
     <footer>
 
-        <div class="footer-wrapper">
+        <div class="footer-wrapper" id="contact">
             <div class="footer-text-box">
                 <div class="footer-text-block">
                     <h4>Moria Bookshop</h4>
@@ -228,7 +250,7 @@
                             <a href="callto:+995598377079" class="footer-white-li"><i class="fa-solid fa-phone footer-phone"></i>  +995 598 37 70 79</a>
                         </li>
                         <li>
-                            <a href="https://www.google.com/maps/place/Main+St,+Illinois,+USA/data=!4m2!3m1!1s0x880fcf125159251d:0x3a1596f87b6d774f?sa=X&ved=2ahUKEwiTxqiR4OT3AhX5iP0HHW4KA_kQ8gF6BAgCEAE" target="_blank" class="footer-white-li"><i class="fa-solid fa-location-dot footer-dot"></i>  Main Str Chicago Ilinois</a>
+                            <a href="https://goo.gl/maps/JdwbypHJeUvCMtvE9" target="_blank" class="footer-white-li"><i class="fa-solid fa-location-dot footer-dot"></i>  118 Akaki Tsereteli Ave</a>
                         </li>
                     </ul>
                 </div>
@@ -240,6 +262,12 @@
         </div>
     </footer>
 
+
+    <!-- loader -->
+    <div class="loader-wrapper">
+        <img src="img/dragon.gif" alt="flying-dragon">
+
+    </div>
 
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

@@ -1,3 +1,13 @@
+:root {
+    --black: #202020;
+    --light-color: #666;
+    --red: #88041c;
+    --dark-red: #5b0313;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --light-border: .1rem solid rgba(0,0,0,.1);
+}
+
+
 @media (max-width: 1000px) {
     .footer-text-box {
         flex-direction: column;
@@ -76,7 +86,16 @@
         justify-content: flex-start;
     }
     .nav-bar {
-        display: none;
+        /* display: none; */
+        position: absolute;
+        top: 4rem;
+        left: 150%;
+        width: 60%;
+        background-color: transparent;
+    }
+    .nav-bar.activeNav {
+        top: 4rem;
+        left: 50%;
     }
     .heading::before{
         display: none;
@@ -101,18 +120,18 @@
 
     /* burger bar styles */
     .list {
-        display: none;
-        margin-top: 20px;
+        width: 100%;
+        padding-right: 30%;
         align-items: flex-end;
+        background-color: var(--black);
+        flex-direction: column;
     }
     .toggleButton {
         display: block;
     }
-    .list {
-        flex-direction: column;
-    }
     .list li {
         text-align: end;
+        margin: 2rem 0;
     }
     .list.activeNav {
         display: block;
@@ -246,5 +265,8 @@
     }
     .subscribtion form h3 {
         width: 70%;
+    }
+    .footer-text-block:nth-child(2) {
+        margin-top: 1rem;
     }
 }

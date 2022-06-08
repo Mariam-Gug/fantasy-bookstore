@@ -169,18 +169,21 @@ body {
     color: var(--dark-red);
     font-size: 1.5rem;
 }
+
+
+
 /* burger bar */
 .toggleButton {
     display: none;
-    width: 27px;
-    height: 21px;
+    width: 1.7rem;
+    height: 1.3rem;
     position: relative;
     transition: .5s ease-in-out;
     cursor: pointer;
 }
 .burgerBarStick {
     position: absolute;
-    height: 4px;
+    height: .3rem;
     width: 100%;
     background: #FFF;
     transition: .5s ease-in-out;
@@ -222,6 +225,117 @@ body {
 }
 
 
+
+/* sign in form */
+
+
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#202020d1;
+    position:fixed;
+    top:0; 
+    right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:100%;
+}
+
+.login-form-container.active{
+    right:0;
+}
+
+.login-form-container form{
+    background:#fff;
+    border:var(--border);
+    width:40rem;
+    padding:2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    margin:2rem;
+}
+
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bold;
+    color:var(--red);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin:.7rem 0;
+    font-size: 1.6rem;
+    border:var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color :var(--black);
+    text-transform: none;
+}
+
+.login-form-container form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+    padding: 1rem 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+.login-form-container form .checkbox label{
+    font-size: 1.5rem;
+    color:var(--light-color);
+    cursor: pointer;
+}
+
+.login-form-container form .btn{
+    text-align: center;
+    width:100%;
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--red);
+    cursor: pointer;
+}
+.login-form-container form .btn:hover {
+    background-color: var(--dark-red);
+}
+
+.login-form-container form p{
+    padding-top: .8rem;
+    color:var(--light-color);
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+.login-form-container form p a{
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 1.5rem; 
+    right: 2.5rem;
+    font-size: 3rem;
+    color:var(--red);
+    cursor: pointer;
+}
 
 
 
@@ -686,4 +800,27 @@ footer {
     font: 14px 'Poppins', sans-serif;
     color: var(--red);
     font-weight: bold;
+}
+
+
+/* loader dragon */
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader-wrapper.active-loader {
+    display: none;
+}
+.loader-wrapper img {
+    height: 15rem;
+    border-radius: 1000px;
 }

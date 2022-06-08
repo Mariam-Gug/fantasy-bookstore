@@ -1,4 +1,6 @@
-// header scroll
+
+
+// fixing navigation when scrolling
 
 window.onscroll = () =>{
     if(window.scrollY > 80) {
@@ -6,7 +8,20 @@ window.onscroll = () =>{
     } else {
         document.getElementById('nav-bar').classList.remove('header-active');
     }
+
+    fadeOut()
 };
+
+
+// loader image
+
+function loader() {
+    document.querySelector('.loader-wrapper').classList.add('active-loader');
+}
+
+function fadeOut() {
+    setTimeout(loader, 2000);
+}
 
 
 // search button responsive
@@ -19,7 +34,7 @@ document.querySelector('#search-btn').onclick = () => {
 
 // burger bar
 
-let navigation = document.getElementById('list');
+let navigation = document.getElementById('nav-bar');
 let toggleButton = document.getElementById('toggleBurger');
 
 toggleButton.addEventListener('click', function() {
@@ -27,6 +42,18 @@ toggleButton.addEventListener('click', function() {
     toggleButton.classList.toggle('pressed');
 })
 
+
+// sign in form
+
+let loginForm = document.querySelector('.login-form-container');
+
+document.querySelector('#login-btn').onclick = () =>{
+  loginForm.classList.toggle('active');
+}
+
+document.querySelector('#close-login-btn').onclick = () =>{
+  loginForm.classList.remove('active');
+}
 
 
 
