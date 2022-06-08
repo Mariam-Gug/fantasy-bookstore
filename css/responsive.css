@@ -1,4 +1,27 @@
-/* burger bar */
+@media (max-width: 1000px) {
+    .footer-text-box {
+        flex-direction: column;
+    }
+    .footer-text-block {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-text-block:nth-child(1) {
+        align-items: center;
+        text-align: center;
+    }
+    .footer-text-block h4,
+    .footer-text-block h5 {
+        margin: 3rem auto 0;
+    }
+    .footer-text-block:nth-child(2) ul {
+        flex-direction: row;
+    }
+    .footer-icons {
+        margin-top: 1rem;
+    }
+}
+
 
 @media (max-width: 980px) {
     .top-header {
@@ -131,6 +154,21 @@
     .inner-cover-box {
         max-width: 500px;
         width: 80%;
+    }
+
+
+    /* footer */
+    .footer-text-block:nth-child(2) ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-text-block ul {
+        margin-top: 1rem;
+    }
+    .footer-copyright {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
