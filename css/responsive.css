@@ -1,5 +1,37 @@
 /* burger bar */
 
+@media (max-width: 980px) {
+    .top-header {
+        position: relative;
+        width: 95%;
+    }
+    .logo span {
+        font-size: 1.2rem;
+    }
+
+
+    .block-wrapper {
+        flex-wrap: wrap;
+    }
+    .block {
+        width: 50%;
+    }
+    .block:nth-child(3),
+    .block:nth-child(4) {
+        margin-top: 3rem;
+    }
+    .slider-wrapper,
+    .image-slide,
+    .slider-content,
+    .slide,
+    .image-box {
+        height: 30rem;
+    }
+    .arrow {
+        font-size: 2rem;
+    }
+}
+
 
 @media (max-width: 768px) {
     .heading {
@@ -8,6 +40,12 @@
         left: 0;
         right: 0;
         z-index: 99;
+    }
+    .logo span {
+        font-size: 1rem;
+    }
+    .logo span:hover {
+        font-size: 1.1rem;
     }
     .navigation {
         flex-direction: column;
@@ -21,14 +59,15 @@
         display: none;
     }
     /* search button */
-    .top-header {
-        position: relative;
-    }
     .search-form {
+        display: none;
         position: absolute;
         top: 110%;
         right: 5%;
         width: 90%;
+    }
+    .search-form.active {
+        display: block;
     }
     #search-box {
         border: var(--border);
@@ -58,10 +97,115 @@
     .slider-wrapper {
         margin-top: 6rem;
     }
+
+    /* slider height */
+
+    .slider-wrapper,
+    .image-slide,
+    .slider-content,
+    .slide,
+    .image-box {
+        height: 25rem;
+    }
+    .arrow {
+        font-size: 1.5rem;
+    }
+
+    /* new arrival section */
+    .new-arrivals-wrapper h2 {
+        margin: 3rem 0;
+        font-size: 25px;
+    }
+    .title span {
+        display: block;
+        margin: 0 auto;
+        width: 15rem;
+    }
+
+    /* bestseller section */
+
+    .cover-box {
+        padding: 5rem 0 8rem 2rem;
+    }
+    .inner-cover-box {
+        max-width: 500px;
+        width: 80%;
+    }
 }
+
+
+
+
+@media (max-width: 670px) {
+    .slider-wrapper,
+    .image-slide,
+    .slider-content,
+    .slide,
+    .image-box {
+        height: 20rem;
+    }
+
+    .dot {
+        height: .3rem;
+        width: 1rem;
+        margin-left: .2rem;
+        margin-right: .2rem;
+    }
+    .grey-box-wrapper h4 {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .cover-box-title {
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+@media (max-width: 540px) {
+    .slider-wrapper,
+    .image-slide,
+    .slider-content,
+    .slide,
+    .image-box {
+        height: 15rem;
+    }
+    .subscribtion form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribtion .box {
+        width: 80%;
+    }
+    .subscribtion form h3 {
+        width: 80%;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    .block {
+        width: 100%;
+    }
+    .block:nth-child(2) {
+        margin-top: 3rem;
+    }
+
+}
+
+
+
 
 @media (max-width: 450px) {
     html{
         font-size: 75%;
+    }
+    .subscribtion form h3 {
+        width: 70%;
     }
 }

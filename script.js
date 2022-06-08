@@ -9,6 +9,14 @@ window.onscroll = () =>{
 };
 
 
+// search button responsive
+
+let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () => {
+    searchForm.classList.toggle('active');
+}
+
 // burger bar
 
 let navigation = document.getElementById('list');

@@ -57,10 +57,12 @@ body {
     align-items: center;
 }
 .search-form {
-    width: 30rem;
+    width: 25rem;
     height: 3.5rem;
+    margin-left: 1rem;
     overflow: hidden;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     color: var(--black);
 }
@@ -69,7 +71,7 @@ body {
     font-family: 'Amatic SC', cursive;
     padding: 0 1.2rem;
     height: 100%;
-    width: 85%;
+    width: 90%;
     border-radius: 1rem;
     border: none;
 }
@@ -78,7 +80,7 @@ body {
 }
 .search-form label {
     font-size: 1.5rem;
-    margin-left: 1.5rem;
+    margin-left: .5rem;
     color: var(--red);
     cursor: pointer;
 }
@@ -105,6 +107,11 @@ body {
 .logo span:hover {
     color: var(--red);
     font-size: 1.4rem;
+}
+.icon-burger-wraper {
+    width: 9rem;
+    display: flex;
+    justify-content: space-between;
 }
 .icons {
     width: 6rem;
@@ -224,7 +231,7 @@ body {
 .slider-content,
 .slide,
 .image-box {
-    height: 600px;
+    height: 37rem;
 }
 .slider-wrapper {
     position: relative;
@@ -234,7 +241,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #fff;
 }
 .left-arrow {
@@ -253,27 +260,19 @@ body {
     background-position: right top;
     background-size: cover;
 }
-.slider-title {
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    color: #fff;
-    font-size: 40px;
-    font-family: 'Smooch', cursive;
-    text-transform: capitalize;
-}
 .dots {
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 400px;
     display: flex;
     justify-content: space-between;
 }
 .dot {
-    height: 10px;
-    width: 30px;
+    height: .4rem;
+    width: 1.5rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
     border-radius: 10px;
     background-color: rgb(143, 143, 143);
     cursor: pointer;
@@ -291,10 +290,11 @@ body {
     font-family: 'MedievalSharp', cursive;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .title span {
-    width: 300px;
+    display: block;
+    width: 18rem;
     padding: .8rem;
     margin-left: 7rem;
     background-color: var(--black);
@@ -373,11 +373,12 @@ body {
     background-color: var(--black);
 }
 .inner-cover-box {
-    max-width: 500px;
+    max-width: 550px;
     width: 50%;
 }
 .cover-box-title {
-    width: 300px;
+    display: block;
+    width: 15rem;
     padding: .8rem;
     margin-left: 7rem;
     background-color: var(--black);
@@ -386,7 +387,7 @@ body {
     font-family: 'MedievalSharp', cursive;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .inner-cover-box p {
     font-family: 'Amatic SC', cursive;
