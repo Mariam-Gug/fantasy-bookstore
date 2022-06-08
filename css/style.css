@@ -8,7 +8,6 @@
     --dark-red: #5b0313;
     --border: .1rem solid rgba(0,0,0,.1);
     --light-border: .1rem solid rgba(0,0,0,.1);
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 * {
@@ -98,7 +97,7 @@ body {
     align-items: center;
 }
 .logo-img {
-    height: 60px;
+    height: 3.9rem;
 }
 .logo span {
     margin-left: 1rem;
@@ -225,7 +224,7 @@ body {
 .slider-content,
 .slide,
 .image-box {
-    height: 500px;
+    height: 600px;
 }
 .slider-wrapper {
     position: relative;
