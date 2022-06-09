@@ -39,7 +39,10 @@
         width: 95%;
     }
     .logo span {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+    }
+    .logo span:hover {
+        font-size: 1.6rem;
     }
 
 
@@ -74,11 +77,14 @@
         right: 0;
         z-index: 99;
     }
+    .top-header {
+        height: 5rem;
+    }
     .logo span {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .logo span:hover {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     .navigation {
         flex-direction: column;
@@ -195,14 +201,14 @@
 
 
 @media (max-width: 670px) {
+
     .slider-wrapper,
     .image-slide,
     .slider-content,
     .slide,
     .image-box {
-        height: 20rem;
+        height: 23rem;
     }
-
     .dot {
         height: .3rem;
         width: 1rem;
@@ -228,7 +234,7 @@
     .slider-content,
     .slide,
     .image-box {
-        height: 15rem;
+        height: 20rem;
     }
     .subscribtion form {
         display: flex;
@@ -268,5 +274,9 @@
     }
     .footer-text-block:nth-child(2) {
         margin-top: 1rem;
+    }
+    #password,
+    #password2 {
+    width: 85%;
     }
 }
