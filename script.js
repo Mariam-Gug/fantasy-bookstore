@@ -128,7 +128,7 @@ toggleButton.addEventListener('click', function() {
     
     
         if (!age) {
-            errors.age = 'Please select your race';
+            errors.age = "Why don't you enter your race? Are you a filthy Orc?";
         }
     
         // console.log(errors);
