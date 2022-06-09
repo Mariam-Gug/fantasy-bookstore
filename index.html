@@ -70,24 +70,62 @@
         </div>
     </header>
 
-    <!-- sign in form -->
-    <div class="login-form-container">
+    <!-- sign in form --> 
 
+    <div class="login-form-container">
         <div id="close-login-btn" class="fas fa-times"></div>
     
-        <form action="">
+        <form action="" id="sign-in">
             <h3>sign in</h3>
             <span>username</span>
-            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <input type="email" name="" class="box" placeholder="enter your email">
             <span>password</span>
-            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <input type="password" name="" class="box" placeholder="enter your password">
             <div class="checkbox">
                 <input type="checkbox" name="" id="remember-me">
                 <label for="remember-me"> remember me</label>
             </div>
-            <input type="submit" value="sign in" class="btn">
+            <button type="submit" value="sign in" class="btn">sign in</button>
             <p>forget password ? <a href="#">click here</a></p>
-            <p>don't have an account ? <a href="#">create one</a></p>
+            <p>don't have an account ? <a href="#" id="create-account">create one</a></p>
+        </form>
+
+
+        <form action="" method="POST" id="registration">
+            <h3>Join the army of readers</h3>
+            <div>
+                <input class="username" type="text" name="username" placeholder="username" id="username">
+                <span class="error-text" id="error_username"></span>
+            </div>
+            <div>
+                <input class="email" type="email" placeholder="@mail.com" id="email" onkeydown="validation()">
+                <span class="error-text" id="error_mail"></span>
+            </div>
+            <div>
+                <input class="password" type="password" name="password" id="password" placeholder="password"><i id="toggleIcon" class="eye fa-solid fa-eye"></i>
+                <span class="error-text" id="error_password"></span>
+            </div>
+            <div>
+                <input class="password" type="password" name="password2" id="password2" placeholder="Repeat password"><i id= "toggleIcon2" class="eye fa-solid fa-eye"></i>
+                <span class="error-text" id="error_password2"></span>
+            </div>
+            <div>
+                <input type="radio" name="age" id="age1">
+                <label for="age1" class="label"> noble dwarf</label>
+                <input type="radio" name="age" id="age2">
+                <label for="age2" class="label"> elf</label>
+                <input type="radio" name="age" id="age2">
+                <label for="age3" class="label"> human</label>
+                <input type="radio" name="age" id="age2">
+                <label for="age4" class="label"> filthy orc</label>
+                <span class="error-text" id="error_age"></span>
+            </div>
+            <div>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree" class="label1">I agree to the terms and conditions</label>
+                <span class="error-text" id="error_agree"></span>
+            </div>
+            <button type="submit" class="btn">Submit</button>
         </form>
     
     </div>
@@ -264,7 +302,7 @@
 
 
     <!-- loader -->
-    <div class="loader-wrapper">
+    <div class="loader-wrapper" id="loading">
         <img src="img/dragon.gif" alt="flying-dragon">
 
     </div>
