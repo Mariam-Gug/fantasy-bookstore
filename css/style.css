@@ -109,13 +109,13 @@ body {
     font-size: 1.4rem;
 }
 .icon-burger-wraper {
-    width: 11rem;
+    width: 12rem;
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
 }
 .icons {
-    width: 6rem;
+    width: 8rem;
     font-size: 2rem;
     margin-left: 1rem;
     color: var(--red);
