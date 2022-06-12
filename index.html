@@ -27,7 +27,7 @@
             <div class="top-header">
                 <a class="logo" href="index.html"><img class="logo-img" src="img/moria.png" alt="moria"><span>moria bookshop</span></a>
                 <form action="" class="search-form">
-                    <input type="search" placeholder="search your books here..." id="search-box">
+                    <input type="search" placeholder="search your books here..." id="search-box" name="search-box">
                     <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
                 </form>
                 <div class="icon-burger-wraper">
@@ -79,11 +79,11 @@
         <form action="" id="sign-in">
             <h3>sign in</h3>
             <span>username</span>
-            <input type="email" name="" class="box" placeholder="enter your email">
+            <input type="email" name="email" class="box" placeholder="enter your email">
             <span>password</span>
-            <input type="password" name="" class="box" placeholder="enter your password">
+            <input type="password" name="password" class="box" placeholder="enter your password">
             <div class="checkbox">
-                <input type="checkbox" name="" id="remember-me">
+                <input type="checkbox" name="checkbox" id="remember-me">
                 <label for="remember-me"> remember me</label>
             </div>
             <button type="submit" value="sign in" class="btn">sign in</button>
@@ -99,7 +99,7 @@
                 <span class="error-text" id="error_username"></span>
             </div>
             <div>
-                <input class="email" type="email" placeholder="@mail.com" id="email" onkeydown="validation()">
+                <input class="email" type="email" placeholder="@mail.com" id="email" name="email" onkeydown="validation()">
                 <span class="error-text" id="error_mail"></span>
             </div>
             <div>
@@ -230,9 +230,9 @@
     <section class="subscription">
         <form action="">
             <h3>Become fellow reader and subscribe for latest news</h3>
-            <input type="email" name="" placeholder="Enter your email" class="box" id="sub-email">
+            <input type="email" name="email2" placeholder="Enter your email" class="box" id="sub-email">
             <span id="error_sub-email"></span>
-            <input type="submit" value="subscribe" class="btn">
+            <input type="submit" value="subscribe" class="btn" name="red-submit-button">
         </form>
 
     </section>
