@@ -725,7 +725,7 @@ body {
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
 }
-#swiper-img {
+.swiper-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
