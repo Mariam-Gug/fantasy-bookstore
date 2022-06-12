@@ -6,8 +6,8 @@ let loader = document.getElementById('loading');
 window.onload = function() {
     setTimeout(function() {
         loader.style.display = 'none';
-    }, 3000)
-}
+    }, 3000);
+};
 
 
 
@@ -30,7 +30,7 @@ let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
-}
+};
 
 // burger bar
 
@@ -40,7 +40,7 @@ let toggleButton = document.getElementById('toggleBurger');
 toggleButton.addEventListener('click', function() {
     navigation.classList.toggle('activeNav');
     toggleButton.classList.toggle('pressed');
-})
+});
 
 
 // sign in form
@@ -52,14 +52,14 @@ toggleButton.addEventListener('click', function() {
 
     document.querySelector('#login-btn').onclick = () =>{
       loginForm.classList.toggle('active');
-    }
+    };
     
     document.querySelector('#close-login-btn').onclick = () =>{
       loginForm.classList.remove('active');
       document.querySelectorAll('.error-text').innerHTML = '';
       signUpForm.classList.remove('active');
       singInForm.classList.remove('not-display');
-    }
+    };
     
     
     
@@ -75,7 +75,7 @@ toggleButton.addEventListener('click', function() {
     createAccount.addEventListener('click', function() {
         signUpForm.classList.add('active');
         singInForm.classList.add('not-display');
-    })
+    });
 
     
     
@@ -94,7 +94,7 @@ toggleButton.addEventListener('click', function() {
     
         if (username.length < 4 || username == '') {
             errors.username = 'Please enter at least 4 symbols';
-        };
+        }
     
         // mail
         let mail = document.getElementById('email').value;
@@ -109,13 +109,13 @@ toggleButton.addEventListener('click', function() {
         if(password != password2 || password == '') {
             errors.password = 'Please enter at least 6 symbols';
             errors.password2 = 'Passwords do not match';
-        };
+        }
     
         // checkbox
         let agree = document.getElementById('agree').checked;
         if(!agree) {
             errors.agree = 'You have not agreed to the terms and conditions';
-        };
+        }
     
         // radio
         let age = false;
@@ -135,9 +135,8 @@ toggleButton.addEventListener('click', function() {
             item.innerHTML = '';
         });
         
-        for (let item in errors) {
+        for(let item in errors) {
             let errorSpan = document.getElementById('error_' + item);
-    
             if(errorSpan) {
                 errorSpan.textContent = errors[item];
             }
@@ -168,13 +167,13 @@ toggleButton.addEventListener('click', function() {
     
         showHidePassword2 = () => {
             if (passwordShow2.type == 'password') {
-                passwordShow2.setAttribute('type', 'text')
+                passwordShow2.setAttribute('type', 'text');
                 toggleIconEye2.classList.add('fa-eye-slash');
             } else {
                 passwordShow2.setAttribute('type', 'password');
                 toggleIconEye2.classList.remove('fa-eye-slash');
             }
-        }
+        };
     
         toggleIconEye.addEventListener('click', showHidePassword1);
         toggleIconEye2.addEventListener('click', showHidePassword2);
@@ -245,7 +244,7 @@ let data = [
         imageUrl: 'https://wallpaperaccess.com/full/6170007.jpg',
         url: '#'
     }
-]
+];
 
 let leftArrow = document.getElementById('left-arrow');
 let rightArrow = document.getElementById('right-arrow');
@@ -285,9 +284,9 @@ function createDots() {
             let id = event.target.getAttribute('data-id');
             sliderIndex = id;
             setSlider();
-        }
+        };
         dots.appendChild(dot);
-    })
+    });
 
     return dots;
 }
@@ -398,7 +397,7 @@ function ajax(url, callback) {
 
 ajax('https://jsonplaceholder.typicode.com/comments', function(data) {
     printData(data);
-})
+});
 
 
 function printData(data) {
