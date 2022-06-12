@@ -1,4 +1,15 @@
 
+// loader image
+
+let loader = document.getElementById('loading');
+
+window.onload = function() {
+    setTimeout(function() {
+        loader.style.display = 'none';
+    }, 3000)
+}
+
+
 
 // fixing navigation when scrolling
 
@@ -9,19 +20,8 @@ window.onscroll = () =>{
         document.getElementById('nav-bar').classList.remove('header-active');
     }
 
-    // fadeOut()
 };
 
-
-// loader image
-
-let loader = document.getElementById('loading');
-
-window.onload = function() {
-    setTimeout(function() {
-        loader.style.display = 'none';
-    }, 3000)
-}
 
 
 // search button responsive
@@ -130,9 +130,7 @@ toggleButton.addEventListener('click', function() {
         if (!age) {
             errors.age = "Why don't you enter your race? Are you a filthy Orc?";
         }
-    
-        // console.log(errors);
-    
+        
         form.querySelectorAll('.error-text').forEach(item => {
             item.innerHTML = '';
         });
@@ -342,7 +340,45 @@ setInterval( () => {
 setSlider();
 
 
-// reviews section
+
+// bestseller swiper Selection starts
+
+let swiper = new Swiper('.books-slider', {
+    slidesPerView: 4,
+    navigation: {
+      nextEl: '#next-button',
+      prevEl: '#prev-button',
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        600: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+    },
+  });
+
+  // bestseller swiper Selection ends
+
+
+
+
+//   subscription email section starts
+
+
+// subscription email section ends
+
+
+
+
+// reviews section starts
 
 let mainWrapperPost = document.getElementById('slider-absolute');
 
@@ -424,30 +460,6 @@ let swiper2 = new Swiper('.comment-swiper', {
 
 // reviews section ends
 
-
-
-// bestseller swiper Selection
-let swiper = new Swiper('.books-slider', {
-    slidesPerView: 4,
-    navigation: {
-      nextEl: '#next-button',
-      prevEl: '#prev-button',
-    },
-    breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        600: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-    },
-  });
 
 
 

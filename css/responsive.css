@@ -236,15 +236,15 @@
     .image-box {
         height: 20rem;
     }
-    .subscribtion form {
+    .subscription form {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .subscribtion .box {
+    .subscription .box {
         width: 80%;
     }
-    .subscribtion form h3 {
+    .subscription form h3 {
         width: 80%;
     }
 }
@@ -269,7 +269,7 @@
     html{
         font-size: 75%;
     }
-    .subscribtion form h3 {
+    .subscription form h3 {
         width: 70%;
     }
     .footer-text-block:nth-child(2) {
